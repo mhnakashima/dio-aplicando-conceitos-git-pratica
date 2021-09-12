@@ -1,0 +1,128 @@
+@import './public/styles/variables.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #efefef;
+  font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: #69CA8E;
+}
+
+img {
+  max-width: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.content {
+  display: grid;
+
+  @media screen and (max-width: 768px) {
+    grid-template-areas:
+      "main"
+      "sidebar"
+    ;
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (min-width: 768px) {
+    grid-template-areas: "sidebar main";
+    grid-template-columns: 3fr 9fr;
+  }
+}
+
+.main {
+  grid-area: main;
+
+  height: 930px;
+  overflow-y: auto;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  height: 100vh;
+  background-color: $mainBackground;
+
+  .information {
+    padding-top: 140px;
+  }
+}
+
+.component {
+  &__block {
+    margin: 3rem;
+    padding: 3rem;
+    background-color: #fff;
+
+    .header {
+      >h1 {
+        color: rgba(10, 10, 10, 0.9);
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+
+    .paragraph {
+      color: rgba(10, 10, 10, 0.5);
+      font-size: 1.1rem;
+      font-weight: 100;
+    }
+  }
+}
+
+.information {
+  text-align: center;
+}
+
+a {
+  color: rgba($color: #0a0a0a, $alpha: 0.8);
+}

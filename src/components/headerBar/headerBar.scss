@@ -1,0 +1,58 @@
+@import './../../public/styles/variables.scss';
+
+.headerBar {
+    margin: 25px 0 70px;
+
+    font-family: 'Oswald', 'sans-serif';
+    font-weight: normal;
+    text-transform: uppercase;
+    
+    &__status {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        margin-right: 40px;
+        font-size: 0.75rem;
+    }
+
+    .status {
+        display: inline-block;
+
+        height: 23px;
+        width: 23px;
+
+        margin-left: 15px;
+        
+        border-radius: 100%;
+
+        &.available {
+            background-color: $statusAvailable;
+        }
+
+        &.warning {
+            background-color: $statusAvailable;
+        }
+    }
+}
+
+.languages {
+    margin: 0 15px;
+    padding: 0;
+    li {
+        display: inline-block;
+        margin-right: 10px;
+        list-style: none;
+    }
+
+    &__button {
+        padding: 0;
+
+        background: none;
+        border: none;
+        color: inherit;
+        cursor: pointer;
+        font: inherit;
+        outline: inherit;
+    }
+}

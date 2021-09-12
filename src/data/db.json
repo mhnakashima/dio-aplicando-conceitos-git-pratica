@@ -1,0 +1,37 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Avon",
+      "subtitle": "",
+      "description":
+        "Um site em Wordpress usando HTML, CSS, Javascript e PHP para gerenciamento de conteúdo para clientes internos e externos da empresa. ",
+      "picture": "project-featured.jpg",
+      "url": "http://example.com"
+    },
+    {
+      "id": 2,
+      "title": "Velocity - Designed for Products",
+      "description":
+        "You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.",
+      "picture": "project-1.jpg",
+      "url": "http://example.com/2"
+    },
+    {
+      "id": 3,
+      "title": "Tempo - Designed for Startups",
+      "description":
+        "You can put one of your secondary projects here. Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.",
+      "picture": "project-4.jpg",
+      "url": "http://example.com/3"
+    },
+    {
+      "id": 4,
+      "title": "Delta - Designed for Mobile Apps",
+      "description":
+        "You can put one of your secondary projects here. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.",
+      "picture": "project-2.jpg",
+      "url": "http://example.com/4"
+    }
+  ]
+}
