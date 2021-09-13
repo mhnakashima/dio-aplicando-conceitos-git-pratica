@@ -31,7 +31,7 @@ class Projects extends React.Component {
       return <div>Loading...</div>;
     } else {
       return (
-        <div id="projects" className="projects container">
+        <div className="projects container">
           <Header value="Latest Projects" />
           {projects.map((item, index) => (
             <Project

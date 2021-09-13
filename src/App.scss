@@ -1,28 +1,17 @@
-@import './public/styles/variables.scss';
-
-html {
-  scroll-behavior: smooth;
+body{
+  background-color: #dddddd;
+  font-family: 'Montserrat', sans-serif;
 }
 
-body {
-  background-color: #efefef;
-  font-family: 'Lato', sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6{
   margin: 0;
 }
 
-a {
+a{
   color: #69CA8E;
 }
 
-img {
+img{
   max-width: 100%;
 }
 
@@ -52,77 +41,42 @@ img {
   color: #61dafb;
 }
 
+.container{
+  margin: 20px;
+  padding: 30px;
+
+  background-color: #fff;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
 }
 
-.content {
+.content{
   display: grid;
-
-  @media screen and (max-width: 768px) {
-    grid-template-areas:
+  
+  @media screen and (max-width: 768px){
+    grid-template-areas: 
       "main"
       "sidebar"
     ;
     grid-template-columns: 1fr;
   }
-
-  @media screen and (min-width: 768px) {
-    grid-template-areas: "sidebar main";
-    grid-template-columns: 3fr 9fr;
+  @media screen and (min-width: 768px){
+    grid-template-areas: "main sidebar";
+    grid-template-columns: 8fr 4fr;
   }
 }
 
-.main {
+.main{
   grid-area: main;
-
-  height: 930px;
-  overflow-y: auto;
 }
 
-.sidebar {
+.sidebar{
   grid-area: sidebar;
-  height: 100vh;
-  background-color: $mainBackground;
-
-  .information {
-    padding-top: 140px;
-  }
-}
-
-.component {
-  &__block {
-    margin: 3rem;
-    padding: 3rem;
-    background-color: #fff;
-
-    .header {
-      >h1 {
-        color: rgba(10, 10, 10, 0.9);
-        font-size: 2rem;
-        font-weight: bold;
-        text-transform: uppercase;
-      }
-    }
-
-    .paragraph {
-      color: rgba(10, 10, 10, 0.5);
-      font-size: 1.1rem;
-      font-weight: 100;
-    }
-  }
-}
-
-.information {
-  text-align: center;
-}
-
-a {
-  color: rgba($color: #0a0a0a, $alpha: 0.8);
 }
